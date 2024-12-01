@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #1e1e1e;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    position:sticky;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 1%;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #e0e0e0;
+    transition: color  0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #64ffda;
+  }
+  
+  /* Section Styles */
+  .section {
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left{
+    position: relative;
+    width: 30%;
+    margin-right: 20%;
+    font-size: larger;
+  }
+  .right{
+    position: relative;
+    width: 30%;
+    
+    
+  }
+  .right img{
+    border-radius: 25%;
+  }
+  #about {
+    padding: 50px 5%; /* Reduced side padding for better use of space */
+    background: #1e1e1e;
+  }
+  
+  .content {
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .section h1, h2 {
+    color: #64ffda;
+  }
+
+/* .boxes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 9rem;
+  height: 100%;
+  width: 100%;
+}
+.box{
+  height: 15rem;
+  width: 15%;
+  background-color: #121212;
+  
+} */
+
+/* Card Section Styles */
+/* Card Section Styles */
+/* Card Section Styles */
+/* Card Section Styles */
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 cards per row */
+  gap: 200px 30px; /* Space between cards */
+  justify-items: center; /* Center the cards within the grid */
+  margin-top: 20px;
+  padding: 10rem 0rem 20rem 0rem;
+}
+
+.box {
+  width: 100%; /* Full width of the grid column */
+  max-width: 250px; /* Set a maximum width for consistent card sizes */
+  height: 300px;
+   perspective: 1000px;/* Enable 3D effect */
+ 
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+   transform: rotateY(0deg); /* Default orientation */
+  transition: transform 0.5s ease-in-out; /* Smooth flip animation */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow for better visual depth */
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: rotateY(180deg); /* Flip on hover */
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Front Card Styles */
+.front {
+  background-color: #2d2d2d; /* A slightly lighter dark gray for distinction */
+  color: #64ffda; /* Accent color */
+  border: 1px solid #64ffda; /* Add a border for visual separation */
+}
+
+.front i {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+/* Back Card Styles */
+.back {
+  background-color: #64ffda;
+  color: #121212;
+   transform: rotateY(180deg);/* Initially flipped */
+  font-size: 20px;
+  font-weight: 600;
+}  
+
+/* Overall Layout */
+body {
+  background-color: #121212; /* Dark soothing background */
+  color: #e0e0e0; /* Light text color for contrast */
+}
+
+/* Responsive Layouts */
+@media (max-width: 768px) {
+  .boxes {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .boxes {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+}
+
+
+  /* Progress Bar */
+  .skill {
+    margin: 30px 0;
+    text-align: left;
+  }
+  
+  .progress-bar-container {
+    background: #333;
+    height: 30px; /* Increased height */
+    width: 75vw; /* Use viewport width units to ensure it spans 75% of the screen */
+    max-width: none; /* Ensure no restrictions on width */
+    border-radius: 15px; /* Rounded edges */
+    margin: 0 auto; /* Center horizontally */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #64ffda, #1e90ff);
+    width: 0;
+    position: relative;
+    border-radius: 15px;
+  }
+  
+  .percentage {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 14px;
+    color: #121212;
+    font-weight: bold;
+    display: none;
+  }
+
+  .custom-cursor {
+    width: 15px;
+    height: 15px;
+    background-color: #64ffda;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+  }
+  
+  
