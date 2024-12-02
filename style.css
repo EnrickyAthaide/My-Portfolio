@@ -42,6 +42,7 @@ body {
   }
   
   /* Section Styles */
+
   .section {
     padding: 50px 20px;
     min-height: 100vh;
@@ -56,6 +57,10 @@ body {
     margin-right: 20%;
     font-size: larger;
   }
+  .left h1{
+    font-size: 40px;
+  }
+  
   .right{
     position: relative;
     width: 30%;

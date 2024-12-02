@@ -9,26 +9,26 @@ gsap.from("#about .content", { scrollTrigger: "#about", duration: 1.5, y: 100, o
 // Import GSAP and ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
-// // Card Hover Flip Animation
-// document.querySelectorAll('.card').forEach((card) => {
-//   // Flip the card forward on hover
-//   card.addEventListener('mouseenter', () => {
-//     gsap.to(card, {
-//       rotateY: 180,
-//       duration: 0.3,
-//       ease: 'power2.out',
-//     });
-//   });
+// Card Hover Flip Animation
+document.querySelectorAll('.card').forEach((card) => {
+  // Flip the card forward on hover
+  card.addEventListener('mouseenter', () => {
+    gsap.to(card, {
+      rotateY: 180,
+      duration: 0.2,
+      ease: 'power2.out',
+    });
+  });
 
-//   // Flip the card back on hover out
-//   card.addEventListener('mouseleave', () => {
-//     gsap.to(card, {
-//       rotateY: 0,
-//       duration: 0.3,
-//       ease: 'power2.out',
-//     });
-//   });
-// });
+  // Flip the card back on hover out
+  card.addEventListener('mouseleave', () => {
+    gsap.to(card, {
+      rotateY: 0,
+      duration: 0.1,
+      ease: 'power2.out',
+    });
+  });
+});
 
 
 
