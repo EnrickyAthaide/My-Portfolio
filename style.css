@@ -60,7 +60,6 @@ body {
   .left h1{
     font-size: 40px;
   }
-  
   .right{
     position: relative;
     width: 30%;
@@ -83,26 +82,6 @@ body {
   .section h1, h2 {
     color: #64ffda;
   }
-
-/* .boxes{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  position: relative;
-  gap: 9rem;
-  height: 100%;
-  width: 100%;
-}
-.box{
-  height: 15rem;
-  width: 15%;
-  background-color: #121212;
-  
-} */
-
-/* Card Section Styles */
-/* Card Section Styles */
-/* Card Section Styles */
 /* Card Section Styles */
 .boxes {
   display: grid;
